@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_shared_preferences/shared_pref/shared_pref_counter.dart';
 import 'package:flutter_shared_preferences/shared_pref/shared_pref_notes.dart';
+import 'shared_pref/notes/notes.dart';
 import 'shared_pref/shared_pref_switch.dart';
 
 void main() {
@@ -26,7 +27,8 @@ class _MyAppState extends State<MyApp> {
       routes: {
         "/shared-pref_switch": (context) => SharedPrefSwitch(),
         "/shared_pref_counter": (context) => SharedPrefCounter(),
-        "/shared_pref_notes": (context) => SharedPrefNotes()
+        "/shared_pref_notes": (context) => SharedPrefNotes(),
+        "/notes": (context) => Notes()
       },
     );
   }
